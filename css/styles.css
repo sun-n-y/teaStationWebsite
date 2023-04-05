@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
 
 /* css variables */
-
 :root {
   --clr-primary: #678e3e;
   --clr-primary-light: #beedac;
@@ -15,4 +14,11 @@
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
+}
+
+/* browser reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
