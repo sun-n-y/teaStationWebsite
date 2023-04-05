@@ -153,3 +153,14 @@ p {
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
 }
+
+/* content divider */
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--clr-primary),
+    #e9b949,
+    var(--clr-primary)
+  );
+}
