@@ -1,7 +1,17 @@
-/* fonts */
+/* 
+===============
+fonts
+===============
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Cedarville+Cursive&display=swap");
 
-/* css variables */
+/* 
+===============
+css variables
+===============
+*/
+
 :root {
   --clr-primary: #678e3e;
   --clr-primary-light: #beedac;
@@ -16,14 +26,24 @@
   --radius: 0.5rem;
 }
 
-/* browser reset */
+/* 
+===============
+browser reset
+===============
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* global styles */
+/* 
+===============
+global styles
+===============
+*/
+
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
@@ -95,7 +115,12 @@ p {
   }
 }
 
-/* other global styles */
+/* 
+===============
+other global styles
+===============
+*/
+
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary);
@@ -122,7 +147,35 @@ p {
   display: table;
 }
 
-/* header */
+.section-title h3 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
+}
+
+/* 
+===============
+header
+===============
+*/
+
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -220,5 +273,49 @@ skills
 @media screen and (min-width: 1200px) {
   .skill {
     width: 25%;
+  }
+}
+
+/* 
+===============
+about
+===============
+*/
+
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+
+.about-picture-container {
+  background: var(--clr-primary);
+  border: 0.5rem solid var(--clr-primary);
+  max-width: 30rem;
+  /* extra stuff */
+  overflow: hidden;
+}
+
+.about-picture {
+  transition: var(--transition);
+}
+
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-text {
+  max-width: 26rem;
+  color: var(--clr-grey-5);
+}
+
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+  }
+  .about-info {
+    padding-left: 2rem;
   }
 }
