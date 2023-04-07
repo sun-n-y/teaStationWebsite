@@ -184,6 +184,7 @@ navbar
   color: var(--clr-primary);
   z-index: 1;
   cursor: pointer;
+  /* animations */
 }
 
 /* 
